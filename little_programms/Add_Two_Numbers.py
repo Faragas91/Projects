@@ -4,13 +4,6 @@
 
 # You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-
-from typing import Optional
 
 from typing import Optional
 
