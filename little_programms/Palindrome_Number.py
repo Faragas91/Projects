@@ -2,8 +2,6 @@
 # palindrome
 # , and false otherwise.
 
- 
-
 # Example 1:
 
 # Input: x = 121
@@ -42,7 +40,9 @@ class Solution:
 # Erzeuge eine Instanz der Solution-Klasse und rufe die Funktion auf
 solution = Solution()
 
-# Gib das Ergebnis aus
+# Gib das Ergebnis aus 
 result = solution.isPalindrome(-121)
 print(result)
+
+
     
