@@ -55,24 +55,31 @@ import numpy as np
 
 numRows = 3  # Anzahl der Zeilen
 s = "PAYPALISHIRING"
-null_matrix = np.zeros((numRows, len(s)), dtype=int)
+null_matrix = np.zeros((numRows, len(s)), dtype=str)
 
 # null_matrix[Zeile, row][Spalte, column]
 
-down = null_matrix[1][0]
-diagonal = null_matrix[-1][-1]
+down = True
+diagonal = False
 word = ""
+i = 0
+
+for char in s:
+    if i != numRows and down == True:
+        null_matrix[i][0] += char
+        i +=1
+    if i == numRows:
+        down = False
+        diagonal = True
+    if diagonal == True:
 
 
-character = list(s)
-print(character)
+        print(null_matrix)
+        
 
 
 
+#     print(char)
 
 
-    
-
-
-
-print(null_matrix)
+# print(null_matrix)
