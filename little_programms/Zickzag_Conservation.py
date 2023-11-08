@@ -61,23 +61,36 @@ null_matrix = np.zeros((numRows, len(s)), dtype=str)
 
 down = True
 diagonal = False
+bla = True
 word = ""
-i = 0
+row = 0
+column = 0 
+u = 0
 
 for char in s:
-    if i != numRows and down == True:
-        null_matrix[i][0] += char
-        i +=1
-    if i == numRows:
-        down = False
+    if row != numRows and down == True:
+        null_matrix[row][0] += char
+        row += 1
+    u += 1
+    if u > numRows and bla == True:
         diagonal = True
-    if diagonal == True:
-
-
-        print(null_matrix)
+        down = False
+        bla = False
+        row = numRows - 2
         
+    
+    if diagonal == True:
+        column += 1
+        null_matrix[row][column] += char
+        row -= 1
+        if row < 0:
+            j = numRows -1
+            u = 0 
+            down = True
 
 
+
+    print(null_matrix)
 
 #     print(char)
 
