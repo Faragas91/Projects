@@ -1,0 +1,38 @@
+#contact_section {
+    padding: 70px 0;
+    background-color: var(--secondary-color);
+}
+
+#contact_section h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#contact_section form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#contact_section label {
+    font-weight: bold;
+}
+
+#contact_section input,
+#contact_section textarea {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#contact_section button {
+    padding: 10px;
+    background-color: var(--main-brand-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact_section button:hover {
+    background-color: var(--main-brand-color-dark);
+}
