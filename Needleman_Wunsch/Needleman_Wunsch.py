@@ -47,8 +47,6 @@ print(null_matrix)
 
 print("Der Score ist", null_matrix[len(seq2)][len(seq1)])
 
-
-
 # Backtracking
 aligned_seq1 = ""
 aligned_seq2 = ""
