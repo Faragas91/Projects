@@ -1,21 +1,22 @@
 footer{
     padding: 70px 0;
-    background-color: var(--secondary-color);
+    background-color: var(--light-secondary-color);
 }
 footer h2{
     font-size: 50px;
     text-align: center;
 }
-.grid-container{
+.grid_container{
     margin: 60px auto;
     width: 1500px;
     max-width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 15px;
-    grid-template-areas: 
-    "item1 item1 item2 item3";
+    grid-template-areas:
+    "item1 item2 item3 item4 item5 item6"; 
+    
 }
 .grid_item{
     background-color: var(--light-secondary-color);
@@ -26,11 +27,14 @@ footer h2{
     gap: 50px;
 }
 .grid_item img{
-    height: 150px;
-    width: 150px;
+    height: 75px;
+    width: 75px;
+    transition: 150ms ease-in-out;
 }
 #item1{
     grid-area: item1;
+    flex-direction: column;
+    gap: 10px;
 }
 #item2{
     grid-area: item2;
@@ -40,29 +44,45 @@ footer h2{
 #item3{
     grid-area: item3;
     flex-direction: column;
+    gap: 10px;
+}
+#item4{
+    grid-area: item4;
+    flex-direction: column;
+    gap: 10px;
+}
+#item5{
+    grid-area: item5;
+    flex-direction: column;
+    gap: 10px;
+}
+#item6{
+    grid-area: item6;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
 }
 
 @media(max-width: 1300px){
-    .grid-container{
+    .grid_container{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 300px 300px 300px;
+        grid-template-rows: 300px 300px;
 
         grid-template-areas: 
-        "item1 item2 item3";
+        "item1 item2 item3"
+        "item4 item5 item6";
     }
 }
 @media(max-width: 900px){
-    .grid-container{
+    .grid_container{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto auto;
 
         grid-template-areas: 
-        "item1 item1" 
-        "item2 item2"
-        "item3 item3";
+        "item1 item2" 
+        "item3 item4"
+        "item5 item6";
     }
 }
 @media(max-width: 650px){
