@@ -1,6 +1,7 @@
 import numpy as np
 
 board = np.full((3, 3), "_", dtype=str)
+print(board)
 count = 0
 
 ## Spielfeld
@@ -24,8 +25,7 @@ def winner(player, symbol):
     if board[0,0] == symbol and board[1,1] == symbol and board[2,2] == symbol or board[0,2] == symbol and board[1,1] == symbol and board[2,0] == symbol:
         print(player + " Win")
         return True
-    
-def tie():
+
     if np.all(board != "_"):
         print("Tie")
         return True
@@ -51,13 +51,28 @@ def draw(player, symbol):
         return True
     return False
 
-while count <= 9:
-    if draw("Player 1", "X"):
+while True:
+    while count <= 9:
+        if draw("Player 1", "X"):
+            break
+        if draw("Player 2", "O"):
+            break
+
+# Überprüfung, ob der Benutzer nochmal spielen möchte oder das Spiel beenden will
+    play_again = input("Do you want to play again? (yes/y/no/n): ").lower()
+    if play_again == "no" or play_again == "n":
+        print("Thank you for playing, Good Bye!")
         break
-    if draw("Player 2", "O"):
+    elif play_again == "yes" or play_again == "y":
+        print("New game will startet...\n")
+        board = np.full((3, 3), "_", dtype=str)
+        print(board)
+        count = 0
+        continue
+    else:
+        print("Invalid entry. Please use 'yes/y' or 'no/n'.\n")
+    if play_again == "nein":
         break
     
-# Aufgaben
 
-# Neues Spiel anfragen
-# Wenn das Spielfeld voll ist und es keinen Gewinner gibt, soll unentschieden herauskommen
+
