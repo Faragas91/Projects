@@ -22,29 +22,26 @@
 # Explanation: The elements can be paired up into pairs (3,5), (4,4), and (6,2).
 # The maximum pair sum is max(3+5, 4+4, 6+2) = max(8, 8, 8) = 8.
 
+from typing import List
 
-nums = [3,5,2,3]
-half = int(len(nums) / 2)
+class Solution:
+    def minPairSum(self, nums: List[int]) -> int:
+        half = len(nums) // 2
+        sorted_nums = sorted(nums)
 
-pairs = []
+        pair_sum = [sorted_nums[i] + sorted_nums[-i-1] for i in range(half)]
+        result = max(pair_sum)
+        
+        return result
 
-for i in range(len(nums)):
-    for j in range(i, len(nums) - 1):
-        pair = nums[i], nums[j+1]
-        pairs.append(pair)
+# Die Eingabedaten
+nums = [4,1,5,1,2,5,1,5,5,4]
 
-sum_pair = []
-for u in range(len(pairs)):
-    sum_pair.append(sum(pairs[u]))
+# Eine Instanz der Solution-Klasse erstellen
+solution = Solution()
 
-sorted_sums = sorted(sum_pair)
+# Die Methode aufrufen und das Ergebnis speichern
+result = solution.minPairSum(nums)
 
-print(pairs)
-    
-print(sum_pair)
-
-# set_pair = set(sum_pair)
-
-# list_pair = list(set_pair)
-
-# print(list_pair)
+# Das Ergebnis anzeigen
+print("The Minimize Maximum Pair Sum is: ", result)
