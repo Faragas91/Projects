@@ -31,43 +31,21 @@
 #     s consists of parentheses only '()[]{}'.
 
 
-class Solution:
-    def isValid(self, s: str) -> bool:
+class Solution(object):
+    def isValid(self, s):
+        opcl = dict(('()', '[]', '{}'))
+        
         stack = []
-        mappings = {')': '(', ']': '[', '}': '{'}
-
-        if len(s) % 2 == 0:
-            length = True
-        else:
-            length = False
-            result = False
-
-        while length and s:
-            left = None
-            right = None
-
-            for char, value in mappings.items():
-                if s.count(value) != s.count(char):
-                    length = False
-                    break
-                if value in s:
-                    left = value
-                    right = char
-                    s = s.replace(value, "", 1)
-                    s = s.replace(char, "", 1)
-                    break    
-
-        if not s:
-            result = True
-            return result
-        else:
-            result = False
-            return result              
+        for idx in s:
+            if idx in '([{':
+                stack.append(idx)
+            elif len(stack) == 0 or idx != opcl[stack.pop()]:
+                return False
+        return len(stack) == 0         
 
 
 # Die Eingabedaten
-s = "{[(())]}[{}]"
-
+s = "[({(())}[()])]"
 # Eine Instanz der Solution-Klasse erstellen
 solution = Solution()
 
@@ -76,5 +54,3 @@ result = solution.isValid(s)
 
 # Das Ergebnis anzeigen
 print("The Input " + s + " is : ", result)
-
-

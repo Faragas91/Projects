@@ -58,21 +58,3 @@ result = solution.addTwoNumbers(list1, list2)
 while result:
     print(result.val, end=" -> ")
     result = result.next
-  
-
-# list1 = [2,4,3]
-# list2 = [5,6,4]
-# bla = 0
-# neue_liste = []
-
-# for i, j in zip(list1, list2):
-#     sum = i+j+bla
-#     if sum >= 10:
-#        bla = 0
-#        neue_liste.append(0)
-#        bla += 1
-#     else:
-#        neue_liste.append(sum)
-# neue_liste.reverse()
- 
-# print(neue_liste)
