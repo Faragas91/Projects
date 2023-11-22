@@ -20,15 +20,18 @@ from typing import List
 
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
-        for i in range(len(nums)):
-            if nums[i] == target:
+        x = 0
+        for number in nums:
+            if number == target:
                 return nums.index(target)
-
-
-
+            x += 1
+            if number != target and x == len(nums):
+                nums.append(target)
+                nums = sorted(nums)
+ 
 # Beispiel
 nums = [1,3,5,6]
-target = 7
+target = 5
 
 # Eine Instanz der Solution-Klasse erstellen
 solution = Solution()
@@ -37,7 +40,7 @@ solution = Solution()
 result = solution.searchInsert(nums, target)
 
 # Das Ergebnis anzeigen
-print("Der Index des Target in der Liste ist:", result)
+print(result)
 
 
 
