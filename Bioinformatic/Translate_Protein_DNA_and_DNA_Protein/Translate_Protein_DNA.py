@@ -18,7 +18,7 @@
 
 import random
 
-with open("Translate_Protein_DNA_and_DNA_Protein/uebung3_map.txt", "r") as file:
+with open("Bioinformatic/Translate_Protein_DNA_and_DNA_Protein/uebung3_map.txt", "r") as file:
     inhalt = file.readlines()
     inhalt = [zeile.strip() for zeile in inhalt] 
 

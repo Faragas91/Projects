@@ -1,4 +1,4 @@
-with open("GC_Content/gc_gehalt.txt", "r") as file:
+with open("Bioinformatic/GC_Content/gc_gehalt.txt", "r") as file:
     inhalt = file.readlines()
     inhalt = [zeile.strip() for zeile in inhalt] 
 
