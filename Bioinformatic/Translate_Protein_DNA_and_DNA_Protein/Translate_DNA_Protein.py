@@ -13,7 +13,7 @@
 # Verwenden Sie die auf Moodle hinterlegte Mapping-Datei uebung 3 _map.txt – Diese enthält zwei Spalten: Codon und Aminosäure (getrennt durch ein Leerzeichen)
 # Hinweis: Auf biologische Korrektheit muss nicht geprüft werden (Start-/Stopp-Codons, etc.)
 
-with open("Translate_Protein_DNA_and_DNA_Protein/uebung3_map.txt", "r") as file:
+with open("Bioinformatic/Translate_Protein_DNA_and_DNA_Protein/uebung3_map.txt", "r") as file:
     inhalt = file.readlines()
     inhalt = [zeile.strip() for zeile in inhalt] 
 
