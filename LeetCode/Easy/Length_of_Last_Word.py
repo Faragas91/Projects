@@ -37,8 +37,6 @@ class Solution:
             if i != " ":
                 new_s += i
             
-                    
-
 
         print(new_s)
 
