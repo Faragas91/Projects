@@ -10,14 +10,14 @@
 <body>
 <div class="container">
     <div class="gallery">
-        <a href="images/0002-1.jpg" data-lightbox="models" download="Bild_0002-1.jpg">
-            <img src="images/0002-1.jpg" alt="Bild 0002-1">
-            <button class="download-button">Download</button>
+        <a href="images/0002-1.jpg" data-lightbox="models">
+            <img src="images/0002-1.jpg">
+            <button class="download-button" onclick="downloadImage('images/0002-1.jpg', 'Bild_0002-1.jpg')">Download</button>
         </a>
-                   
 
         <a href="images/0002-2.jpg" data-lightbox="models">
             <img src="images/0002-2.jpg">
+            <button class="download-button" onclick="downloadImage('images/0002-2.jpg', 'Bild_0002-2.jpg')">Download</button>
         </a>
 
         <a href="images/0002-3.jpg" data-lightbox="models">
@@ -847,5 +847,13 @@
     </div>
 </div>
     <script src="lightbox-plus-jquery.js"></script>
+    <script>
+        function downloadImage(imageSrc, fileName) {
+            const link = document.createElement('a');
+            link.href = imageSrc;
+            link.download = fileName;
+            link.click();
+        }
+    </script>
 </body>
 </html>
