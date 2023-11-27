@@ -31,19 +31,18 @@
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        new_s = ""
-    
-        for i in s:
-            if i != " ":
-                new_s += i
-            
+        length = 0
+        s = s[::-1]
+        
+        for i in range(0, len(s)):    
+                if s[i].isalpha():
+                    length +=1
+                elif length > 0:
+                    break
 
-        print(new_s)
-
-
+        return length
 
 s = "   fly me   to   the moon  "
-
 solution = Solution()
 
 result = solution.lengthOfLastWord(s)
