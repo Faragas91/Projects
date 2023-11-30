@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe Aktive Datei kompilieren",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-std=c++17",
+				"-Wall",
+				"-Wextra",
+				"-o",
+				"${workspaceFolder}\\main.exe",
+				"${workspaceFolder}\\main.cpp",
+                "${workspaceFolder}\\FastaParser.cpp",
+                "${workspaceFolder}\\FastaSequence.cpp",
+
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "Compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
