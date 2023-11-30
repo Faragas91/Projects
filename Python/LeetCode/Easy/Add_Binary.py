@@ -27,4 +27,11 @@ class Solution:
 a = "11"
 b = "1"
 
+solution = Solution()
 
+result = Solution.addBinary(a, b)
+
+print(result)
+
+
+fgdfgd
