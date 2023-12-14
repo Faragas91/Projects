@@ -21,17 +21,20 @@
 
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        pass
+        decimal_a = int(a, 2)
+        decimal_b = int(b, 2)
 
+        decimal_both = decimal_a + decimal_b
 
-a = "11"
-b = "1"
+        binary_string = bin(decimal_both)[2:]
+        return str(binary_string)
+        
+
+a = "1010"
+b = "1011"
 
 solution = Solution()
 
-result = Solution.addBinary(a, b)
+result = solution.addBinary(a, b)
 
 print(result)
-
-
-fgdfgd
