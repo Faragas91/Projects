@@ -43,9 +43,9 @@ import pandas as pd
 
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     df = pd.DataFrame(employees)
-    new_df = df['salary'] * 2
+    df['salary'] = df['salary'] * 2
 
-    return new_df
+    return df
 
 employees = {
     'name': ['Jack','Piper', 'Mia', 'Ulysses'],
