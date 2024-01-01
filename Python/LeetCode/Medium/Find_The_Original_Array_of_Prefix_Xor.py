@@ -1,4 +1,5 @@
-# You are given an integer array pref of size n. Find and return the array arr of size n that satisfies:
+# You are given an integer array pref of size n. Find and return the array 
+# arr of size n that satisfies:
 
 #     pref[i] = arr[0] ^ arr[1] ^ ... ^ arr[i].
 
@@ -6,6 +7,10 @@
 
 # It can be proven that the answer is unique.
 
+# Hint
+# Consider the following equation: x ^ a = b. How can you find x?
+# Notice that arr[i] ^ pref[i-1] = pref[i]. 
+# This is the same as the previous equation.
  
 
 # Example 1:
@@ -34,8 +39,18 @@ from typing import List
 
 class Solution:
     def findArray(self, pref: List[int]) -> List[int]:
-        pass
-
+        arr = [0] * len(pref)
+        arr[0] = pref[0]
+        arr.reverse()
+        pref.reverse()
+        
+        for i in range(len(pref)):
+            if i != len(pref) - 1:
+                arr[i] = pref[i] ^ pref[i + 1]
+            else:
+                break
+        arr.reverse()
+        return arr
 
 
 pref = [5,2,0,3,1]
