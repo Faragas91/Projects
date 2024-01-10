@@ -33,4 +33,26 @@ from typing import List
 
 class Solution:
     def maxWidthOfVerticalArea(self, points: List[List[int]]) -> int:
-        pass
+        sorted_points = sorted(points)
+        
+        i = 0
+        j = 1
+        vertical_area = 0
+        while j < len(sorted_points):
+            new_vertical_area = sorted_points[j][0] - sorted_points[i][0]
+            i += 1
+            j += 1
+            if new_vertical_area > vertical_area:
+                vertical_area = new_vertical_area
+        
+        return vertical_area
+
+
+points = [[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]
+
+result = Solution().maxWidthOfVerticalArea(points)
+
+print(result)
+
+    
+
