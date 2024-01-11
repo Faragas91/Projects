@@ -29,4 +29,21 @@ from typing import List
 
 class Solution:
     def shuffle(self, nums: List[int], n: int) -> List[int]:
-        pass
+        new_nums = []
+        first_nums = nums[:n]
+        second_nums = nums[n:]
+
+        i = 0
+        while len(new_nums) != len(nums):
+            new_nums.append(first_nums[i])
+            new_nums.append(second_nums[i])
+            i += 1
+
+        return new_nums
+
+nums = [2,5,1,3,4,7]
+n = 3
+
+result = Solution().shuffle(nums, n)
+
+print(result)
