@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "zusammen.cpp kompilieren",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-std=c++17",
+				"-g",
+				"Final_Value_of_Variable_After_Performing_Operations.cpp", 
+				"-o",
+				"${workspaceFolder}\\Final_Value_of_Variable_After_Performing_Operations.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
