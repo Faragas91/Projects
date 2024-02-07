@@ -25,6 +25,7 @@
 # Output: [[1],[0,5],[2,3,4]]
 
 from typing import List
+import copy
 
 
 class Solution:
@@ -41,25 +42,19 @@ class Solution:
                     if len(group) >= unique[i]:
                         new_group.append(group)
                         group = []
-
-
-        for u, group in enumerate(new_group):
-        # Jetzt ist u der Index und group ist das Element
-
-
-
         
-        # if new_group[1][1] == 3:
-        #     print("jdakjf")
+        final_group = copy.deepcopy(new_group)
 
-    
+        # Iteriere über die Indizes von new_group
+        for z, row in enumerate(new_group):
+            for y, value in enumerate(row):
+                # Finde den Index von value in groupSizes und weise ihn final_group zu
+                final_group[z][y] = groupSizes.index(value)
+                groupSizes[groupSizes.index(value)] = None
 
-                    
+        return final_group
 
-
-
-
-groupSizes = [3,3,3,3,3,1,3]
+groupSizes = [2,1,3,3,3,2]
 
 result = Solution().groupThePeople(groupSizes)
 
