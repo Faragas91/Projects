@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 res://player.tscn
 res://survivor_game.tscn
 res://pine_tree.tscn
 res://mob.tscn
+=======
+res://mob.tscn
+res://survivor_game.tscn
+res://player.tscn
+res://gun.tscn
+res://bullet.tscn
+res://bullet.gd
+>>>>>>> 379befeb79222bef53d0ac3e38be14e33b695d4e
