@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dmxo7s05y2jy0"]
+[gd_scene load_steps=3 format=3 uid="uid://dmxo7s05y2jy0"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_5bd5y"]
+[ext_resource type="Texture2D" uid="uid://du1n3wcd6feo3" path="res://character/Right/stehen_rechts.png" id="2_ivihn"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_5bd5y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(30, 12)
+texture = ExtResource("2_ivihn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
