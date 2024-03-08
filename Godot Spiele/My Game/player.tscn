@@ -1,13 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmxo7s05y2jy0"]
+[gd_scene load_steps=4 format=3 uid="uid://dmxo7s05y2jy0"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_5bd5y"]
-[ext_resource type="Texture2D" uid="uid://du1n3wcd6feo3" path="res://character/Right/stehen_rechts.png" id="2_ivihn"]
+[ext_resource type="Texture2D" uid="uid://di1ulfytoktjy" path="res://character/Right/stehen_rechts.png" id="2_ivihn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42pp1"]
+size = Vector2(59, 41)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_5bd5y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(30, 12)
 texture = ExtResource("2_ivihn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(29.5, 20.5)
+shape = SubResource("RectangleShape2D_42pp1")

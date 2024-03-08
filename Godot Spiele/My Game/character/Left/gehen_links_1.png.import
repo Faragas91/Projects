@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpksy2w7e4o"
-path="res://.godot/imported/rennen_rechts.png-1ba7ec7fdb4ccd7862cc0c9dcd654c95.ctex"
+uid="uid://bffl3jeu0rkud"
+path="res://.godot/imported/gehen_links_1.png-b2b156a2079291a5f822b4c4a11cbb99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Right/rennen_rechts.png"
-dest_files=["res://.godot/imported/rennen_rechts.png-1ba7ec7fdb4ccd7862cc0c9dcd654c95.ctex"]
+source_file="res://character/Left/gehen_links_1.png"
+dest_files=["res://.godot/imported/gehen_links_1.png-b2b156a2079291a5f822b4c4a11cbb99.ctex"]
 
 [params]
 
