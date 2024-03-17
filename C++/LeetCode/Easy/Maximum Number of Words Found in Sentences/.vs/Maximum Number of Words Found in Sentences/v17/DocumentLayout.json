@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\C\u002B\u002B\\LeetCode\\Easy\\Maximum Number of Words Found in Sentences\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04A1022D-683F-4C26-9A58-7D80F1B82FD0}|Maximum Number of Words Found in Sentences\\Maximum Number of Words Found in Sentences.vcxproj|D:\\Projects\\C\u002B\u002B\\LeetCode\\Easy\\Maximum Number of Words Found in Sentences\\Maximum Number of Words Found in Sentences\\Maximum_Number_of_Words_Found_in_Sentences.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04A1022D-683F-4C26-9A58-7D80F1B82FD0}|Maximum Number of Words Found in Sentences\\Maximum Number of Words Found in Sentences.vcxproj|solutionrelative:Maximum Number of Words Found in Sentences\\Maximum_Number_of_Words_Found_in_Sentences.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Maximum_Number_of_Words_Found_in_Sentences.cpp",
+              "DocumentMoniker": "D:\\Projects\\C\u002B\u002B\\LeetCode\\Easy\\Maximum Number of Words Found in Sentences\\Maximum Number of Words Found in Sentences\\Maximum_Number_of_Words_Found_in_Sentences.cpp",
+              "RelativeDocumentMoniker": "Maximum Number of Words Found in Sentences\\Maximum_Number_of_Words_Found_in_Sentences.cpp",
+              "ToolTip": "D:\\Projects\\C\u002B\u002B\\LeetCode\\Easy\\Maximum Number of Words Found in Sentences\\Maximum Number of Words Found in Sentences\\Maximum_Number_of_Words_Found_in_Sentences.cpp",
+              "RelativeToolTip": "Maximum Number of Words Found in Sentences\\Maximum_Number_of_Words_Found_in_Sentences.cpp",
+              "ViewState": "AQIAABgAAAAAAAAAAAAcwCUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-17T15:33:24.17Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
