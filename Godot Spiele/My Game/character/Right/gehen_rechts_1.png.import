@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:Godot Spiele/My Game/character/Right/laufen_rechts.png.import
 uid="uid://bh11p7xgff6vt"
 path="res://.godot/imported/laufen_rechts.png-52b347774e2e5c5bf3f083b32179d536.ctex"
+=======
+uid="uid://ifpdawpuu2ou"
+path="res://.godot/imported/gehen_rechts_1.png-39d3b5859e18300b5c09796c0caeaa5c.ctex"
+>>>>>>> 20e9202c0cd1b37696a37d699cadc82a50e87b22:Godot Spiele/My Game/character/Right/gehen_rechts_1.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:Godot Spiele/My Game/character/Right/laufen_rechts.png.import
 source_file="res://Character/Right/laufen_rechts.png"
 dest_files=["res://.godot/imported/laufen_rechts.png-52b347774e2e5c5bf3f083b32179d536.ctex"]
+=======
+source_file="res://character/Right/gehen_rechts_1.png"
+dest_files=["res://.godot/imported/gehen_rechts_1.png-39d3b5859e18300b5c09796c0caeaa5c.ctex"]
+>>>>>>> 20e9202c0cd1b37696a37d699cadc82a50e87b22:Godot Spiele/My Game/character/Right/gehen_rechts_1.png.import
 
 [params]
 

@@ -2,8 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://ckq0fqoiwnmmq"
 path="res://.godot/imported/stehen_links.png-43e5bcca0f11aa2e38eb80ce4d20e8a4.ctex"
+=======
+uid="uid://bb325po2l868h"
+path="res://.godot/imported/stehen_links.png-020dc74e5ef6fa3e35e2ee2da07db535.ctex"
+>>>>>>> 20e9202c0cd1b37696a37d699cadc82a50e87b22
 metadata={
 "vram_texture": false
 }
