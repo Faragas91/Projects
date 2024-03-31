@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "zusammen.cpp kompilieren",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-std=c++17",
+				"-g",
+				"Sum_of_Values_at_Indices_With_K_Set_Bits.cpp", 
+				"-o",
+				"${workspaceFolder}\\Sum_of_Values_at_Indices_With_K_Set_Bits.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}

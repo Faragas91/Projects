@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "zusammen.cpp kompilieren",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-std=c++17",
+				"-g",
+				"Running_Sum_of_1d_Array.cpp", 
+				"-o",
+				"${workspaceFolder}\\Running_Sum_of_1d_Array.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
