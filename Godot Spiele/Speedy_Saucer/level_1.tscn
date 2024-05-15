@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://duqt6vsdcd4o1"]
+[gd_scene load_steps=3 format=3 uid="uid://duqt6vsdcd4o1"]
 
 [ext_resource type="Texture2D" uid="uid://m3r1e2wgkysj" path="res://purple.png" id="1_yw3sp"]
+[ext_resource type="PackedScene" uid="uid://bhfli5kethec" path="res://player.tscn" id="2_18cff"]
 
 [node name="Level1" type="Node2D"]
 
@@ -9,3 +10,5 @@ offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_yw3sp")
 stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_18cff")]
