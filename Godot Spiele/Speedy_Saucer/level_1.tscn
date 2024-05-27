@@ -1,22 +1,70 @@
-[gd_scene load_steps=4 format=3 uid="uid://duqt6vsdcd4o1"]
+[gd_scene load_steps=7 format=3 uid="uid://dyhmfpu8kym36"]
 
-[ext_resource type="Script" path="res://level.gd" id="1_ewol4"]
+[ext_resource type="Script" path="res://level_1.gd" id="1_v6xwj"]
 [ext_resource type="Texture2D" uid="uid://m3r1e2wgkysj" path="res://purple.png" id="1_yw3sp"]
-[ext_resource type="PackedScene" uid="uid://bhfli5kethec" path="res://player.tscn" id="2_18cff"]
-[ext_resource type="PackedScene" uid="uid://cotweeb3eddkj" path="res://maze.tscn" id="3_6on8l"]
+[ext_resource type="PackedScene" uid="uid://dt0lhcqp81b6h" path="res://player.tscn" id="2_o85c2"]
+[ext_resource type="PackedScene" uid="uid://cotweeb3eddkj" path="res://maze.tscn" id="3_udg8j"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7w6jg"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_yed1f"]
+font_size = 24
 
 [node name="Level1" type="Node2D"]
-script = ExtResource("1_ewol4")
+script = ExtResource("1_v6xwj")
 
-[node name="Background" type="TextureRect" parent="."]
-z_index = -140
-offset_right = 1152.0
-offset_bottom = 648.0
+[node name="Graphics" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Graphics"]
+layer = -10
+
+[node name="Background" type="TextureRect" parent="Graphics/CanvasLayer"]
+z_index = -100
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_yw3sp")
-stretch_mode = 1
 
-[node name="Player" parent="." instance=ExtResource("2_18cff")]
+[node name="StartLabel" type="Label" parent="Graphics"]
+z_index = -25
+offset_left = -70.0
+offset_top = -193.0
+offset_right = 25.0
+offset_bottom = -148.0
+text = "START
+"
+label_settings = SubResource("LabelSettings_7w6jg")
 
-[node name="Maze" parent="." instance=ExtResource("3_6on8l")]
+[node name="EndLabel" type="Label" parent="Graphics"]
+z_index = -25
+offset_left = 671.0
+offset_top = -309.0
+offset_right = 766.0
+offset_bottom = -264.0
+text = "END
+"
+label_settings = SubResource("LabelSettings_7w6jg")
+
+[node name="Tutorial" type="Label" parent="Graphics"]
+z_index = -25
+offset_left = -572.0
+offset_top = -233.0
+offset_right = -161.0
+offset_bottom = 86.0
+text = "Rules:
+- Use arrow keys or WASD to move
+- Go from the start to the end
+- You will go back to the start if you 
+   go outside of the maze"
+label_settings = SubResource("LabelSettings_yed1f")
+
+[node name="Player" parent="." instance=ExtResource("2_o85c2")]
+
+[node name="Maze" parent="." instance=ExtResource("3_udg8j")]
 z_index = -50
-position = Vector2(574, 325)
+texture_repeat = 2
+
+[connection signal="body_exited" from="Maze" to="." method="_on_maze_body_exited"]
